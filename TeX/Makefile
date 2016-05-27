@@ -18,5 +18,8 @@ edu: edu.tex
 audio: audio.tex
 	pdflatex audio.tex
 
+games: games.tex
+	pdflatex games.tex
+
 clean:
 	rm *.log *.aux *.out 
