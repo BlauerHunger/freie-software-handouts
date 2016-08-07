@@ -1,13 +1,16 @@
 \documentclass[12pt,a4paper]{leaflet}
-\usepackage[utf8]{luainputenc} % remove if you want to use XeTeX
+\usepackage[utf8]{inputenc} % remove if you want to use XeTeX
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage{graphicx}
-\usepackage[cymk]{xcolor}
+\usepackage[cmyk]{xcolor}
 \xdefinecolor{gray}{gray}{.5}
 \xdefinecolor{darkgray}{gray}{.3}
 \usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{tikz}
+\usepackage{expl3}
 \hypersetup{
     pdftoolbar=true,
     pdfmenubar=true,
@@ -22,13 +25,14 @@
 }
 \def\UrlFont{\bfseries}
 
-
 %% Set a slim Tex-font:
 \usepackage[condensed]{tgheros}
 \renewcommand*\familydefault{\sfdefault}
 %% When using LuaTeX you can instead set a ttf-font:
 %\usepackage{fontspec}
-%\setmainfont{font.ttf}
+%\setmainfont[
+% BoldFont={LiberationSansNarrow-Bold.ttf}, 
+%]{LiberationSansNarrow-Regular.ttf}
 
 %% Documentsettings:
 \pagestyle{empty}
@@ -140,7 +144,7 @@ leben die Ersteller/-innen zum Beispiel von Auftragsarbeiten, Support-Verträgen
 oder auch Spenden der glücklichen Nutzer/-innen.
 
 Die hier aufgeführten Programme sind nur
-eine winzige \textbf{Auswahl} der verfügbaren Freien
+eine \textbf{winzige Auswahl} der verfügbaren Freien
 Software, um Dir die erste Annäherung so einfach und sicher wie möglich
 zu gestalten. Weitere Informationen zu Freier Software,
 Freien Software-Lizenzen und der \frqq Freien Software Bewegung\flqq 
