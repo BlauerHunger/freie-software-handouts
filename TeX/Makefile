@@ -1,4 +1,4 @@
-all: grafik office video web edu audio
+all: grafik office video web edu audio games
 
 grafik: grafik.tex
 	pdflatex grafik.tex
